@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.color-r {
+  color: red;
+}
+
+.color-b {
+  color: blue;
+}
+
+.color-g {
+  color: green;
+}
+
+.bgcolor-c {
+  background-color: cyan;
+}
+
+p, ol{
+    border: 1px solid gray;
+    margin: 0.5em;
+}
