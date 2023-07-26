@@ -1,3 +1,24 @@
+let timout = setTimeout(() => alert("Time is up."), 5000);
+
+let interval = setInterval(() => {
+  console.log(new Date().toLocaleString());
+}, 2000);
+
+let eventBtn1 = document.querySelector("#event .btn-1");
+let eventBtn2 = document.querySelector("#event .btn-2");
+let eventBtn3 = document.querySelector("#event .btn-3");
+
+console.log(eventBtn1);
+let showTarget = (e) => alert(e.target.innerText);
+
+eventBtn1.addEventListener("click", showTarget);
+eventBtn2.addEventListener("click", showTarget);
+eventBtn3.addEventListener("click", (e) => {
+  console.log("clear " + interval);
+  clearInterval(interval);
+  showTarget(e);
+});
+
 let showTime = (hour) => {
   let greeting;
   let demo = document.querySelectorAll("#elif .demo")[0];
