@@ -19,7 +19,7 @@
   text-align: center; 
   
   font-size: 15px;
-  transition: 2s;
+  /* transition: 2s; */
 }
 
 .accordion:hover {
@@ -51,7 +51,6 @@
   /* width: 30%; */
   overflow: hidden;
 
-  /*display: none;*/
-  max-height: 0;
-  transition: max-height .7s ease-in;
+  max-height: 0; /* control max-height */
+  /* transition: max-height .7s ease-in; */
 }
