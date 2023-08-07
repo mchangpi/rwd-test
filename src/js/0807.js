@@ -7,7 +7,7 @@ for (let acc of accList) {
     console.log("target " + e.target.innerHTML);
 
     let subAcc = e.target.nextElementSibling;
-    console.log("display " + subAcc);
+    console.log("subAcc display " + subAcc.style.display);
 
     if (subAcc.style.display != "block") subAcc.style.display = "block";
     else subAcc.style.display = "";
@@ -20,7 +20,7 @@ for (let sub of subAccList) {
     console.log("target " + e.target.innerHTML);
 
     let panel = e.target.nextElementSibling;
-    console.log("panel " + panel.style.display);
+    console.log("panel display " + panel.style.display);
 
     if (panel.style.display != "block") panel.style.display = "block";
     else panel.style.display = "";
