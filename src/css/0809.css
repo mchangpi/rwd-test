@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.item{
+  width: 10vw;
+}
