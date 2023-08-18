@@ -8,20 +8,46 @@
   </head>
   <body>
     <header>
-      <h2 class="text-3xl font-bold underline">p5.js 入門筆記</h2>
+      <h2 class="text-3xl font-bold">p5.js 入門筆記</h2>
       <h4>
         各位好, 我是網站工程師張志榮, 此網站為我學習p5.js的心得及筆記, 謝謝
       </h4>
-      <nav>
-        <span>Home</span>
-        <span>References</span>
-        <span>Contact</span>
+      <nav class="flex">
+        <span class="m-1">Home</span>
+        <span class="m-1">References</span>
+        <span class="m-1">Contact</span>
       </nav>
     </header>
     <hr />
-    <main>
-      <aside>Aside: note1 note2 note3</aside>
-      <article>Basic intro of p5.js, and why I want to learn p5.js</article>
+    <main class="flex">
+      <aside class="m-4">
+        Aside:
+        <ul>
+          <li>
+            <a href="./html/note-1.html" target="main-frame" class="underline"
+              >note1</a
+            >
+          </li>
+          <li>
+            <a href="./html/note-2.html" target="main-frame" class="underline"
+              >note2</a
+            >
+          </li>
+          <li>
+            <a href="./html/note-3.html" target="main-frame" class="underline"
+              >note3</a
+            >
+          </li>
+        </ul>
+      </aside>
+      <section class="m-1">
+        <iframe
+          src="./html/intro.html"
+          name="main-frame"
+          title=""
+          class="w-screen h-screen"
+        ></iframe>
+      </section>
     </main>
     <hr />
     <footer>
@@ -33,7 +59,6 @@
           >MiltonPi™</a
         >. All Rights Reserved.
       </span>
-      <address></address>
     </footer>
   </body>
 </html>
