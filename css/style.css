@@ -1,3 +1,191 @@
-h1 {
+/*
+Normalize.css makes browsers render all elements more consistently and 
+in line with modern standards. It precisely targets only the styles 
+that need normalizing.
+
+https://necolas.github.io/normalize.css/
+*/
+@import "./css/normalise.css";
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.grid-1 {
+  width: calc(100% / 12 * 1);
+}
+
+.grid-2 {
+  width: calc(100% / 12 * 2);
+}
+
+.grid-3 {
+  width: calc(100% / 12 * 3);
+}
+
+.grid-4 {
+  width: calc(100% / 12 * 4);
+}
+
+.grid-5 {
+  width: calc(100% / 12 * 5);
+}
+
+.grid-6 {
+  width: calc(100% / 12 * 6);
+}
+
+.grid-7 {
+  width: calc(100% / 12 * 7);
+}
+
+.grid-8 {
+  width: calc(100% / 12 * 8);
+}
+
+.grid-9 {
+  width: calc(100% / 12 * 9);
+}
+
+.grid-10 {
+  width: calc(100% / 12 * 10);
+}
+
+.grid-11 {
+  width: calc(100% / 12 * 11);
+}
+
+.grid-12 {
+  width: calc(100% / 12 * 12);
+}
+
+.ds-none {
+  display: none;
+}
+
+.ds-block {
+  display: block;
+}
+
+.ds-inline {
+  display: inline;
+}
+
+.ds-inline-block {
+  display: inline-block;
+}
+
+.ds-flex {
+  display: flex;
+}
+
+.grid-s-1 {
+  width: calc(100% / 12 * 1);
+}
+
+.grid-s-2 {
+  width: calc(100% / 12 * 2);
+}
+
+.grid-s-3 {
+  width: calc(100% / 12 * 3);
+}
+
+.grid-s-4 {
+  width: calc(100% / 12 * 4);
+}
+
+.grid-s-5 {
+  width: calc(100% / 12 * 5);
+}
+
+.grid-s-6 {
+  width: calc(100% / 12 * 6);
+}
+
+.grid-s-7 {
+  width: calc(100% / 12 * 7);
+}
+
+.grid-s-8 {
+  width: calc(100% / 12 * 8);
+}
+
+.grid-s-9 {
+  width: calc(100% / 12 * 9);
+}
+
+.grid-s-10 {
+  width: calc(100% / 12 * 10);
+}
+
+.grid-s-11 {
+  width: calc(100% / 12 * 11);
+}
+
+.grid-s-12 {
+  width: calc(100% / 12 * 12);
+}
+
+ul {
+  display: flex;
+}
+ul li {
   color: red;
-}/*# sourceMappingURL=style.css.map */
+}
+ul li:hover {
+  color: blue;
+}
+
+/* https://sass-lang.com/documentation/at-rules/control/each/ */
+.icon-40px {
+  font-size: 40px;
+  height: 40px;
+  width: 40px;
+}
+
+.icon-50px {
+  font-size: 50px;
+  height: 50px;
+  width: 50px;
+}
+
+.icon-80px {
+  font-size: 80px;
+  height: 80px;
+  width: 80px;
+}
+
+/* https://sass-lang.com/documentation/at-rules/control/for/ */
+ul:nth-child(3n+1) {
+  background-color: #004080;
+}
+
+ul:nth-child(3n+2) {
+  background-color: #004d99;
+}
+
+ul:nth-child(3n+3) {
+  background-color: #0059b3;
+}
+
+/* https://sass-lang.com/documentation/at-rules/mixin/ */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Difference between Reset CSS and Normalize CSS 
+https://israynotarray.com/css/20210807/3641451940/ *//*# sourceMappingURL=style.css.map */

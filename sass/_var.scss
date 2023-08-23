@@ -1,0 +1,33 @@
+$aligns: left,right,center,justify;
+$displays: none,block,inline,inline-block,flex;
+
+@mixin default(){
+    @each $a in $aligns{
+        .text-#{$a}{
+            text-align: #{$a};
+        }
+    }
+    @for $i from 1 through 12{
+        .grid-#{$i}{
+            width: calc(100% / 12 * #{$i});
+        }
+    }
+}
+@mixin s-phone(){
+    @each $d in $displays{
+        .ds-#{$d}{
+            display: #{$d};
+        }
+    }
+    @for $i from 1 through 12{
+        .grid-s-#{$i}{
+            width: calc(100% / 12 * #{$i});
+        }
+    }
+}
+@mixin m-table(){
+}
+@mixin l-desk(){
+}
+@mixin xl-tv(){
+}

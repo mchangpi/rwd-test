@@ -1,3 +1,59 @@
-h1{
-    color: red;
+/*
+Normalize.css makes browsers render all elements more consistently and 
+in line with modern standards. It precisely targets only the styles 
+that need normalizing.
+
+https://necolas.github.io/normalize.css/
+*/
+
+@import "./css/normalise.css";
+@import "var";
+
+@include default;
+@include s-phone;
+@include m-table;
+@include l-desk;
+@include xl-tv;
+
+ul{
+    display: flex;
+    li{
+        color: red;
+    };
+    li:hover{
+        color: blue;
+    }
 }
+
+/* https://sass-lang.com/documentation/at-rules/control/each/ */
+$sizes: 40px, 50px, 80px;
+@each $size in $sizes {
+  .icon-#{$size} {
+    font-size: $size;
+    height: $size;
+    width: $size;
+  }
+}
+
+/* https://sass-lang.com/documentation/at-rules/control/for/ */
+$base-color: #036;
+@for $i from 1 through 3 {
+  ul:nth-child(3n + #{$i}) {
+    background-color: lighten($base-color, $i * 5%);
+  }
+}
+
+/* https://sass-lang.com/documentation/at-rules/mixin/ */
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul {
+  @include reset-list;
+}
+
+/* Difference between Reset CSS and Normalize CSS 
+https://israynotarray.com/css/20210807/3641451940/ */
+
