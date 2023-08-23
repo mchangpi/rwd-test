@@ -1,0 +1,96 @@
+@import "./css/normalise.css";
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-flex-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-flex-end {
+  justify-content: flex-end;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.grid-1 {
+  width: calc(100% / 12 * 1);
+}
+
+.grid-2 {
+  width: calc(100% / 12 * 2);
+}
+
+.grid-3 {
+  width: calc(100% / 12 * 3);
+}
+
+.grid-4 {
+  width: calc(100% / 12 * 4);
+}
+
+.grid-5 {
+  width: calc(100% / 12 * 5);
+}
+
+.grid-6 {
+  width: calc(100% / 12 * 6);
+}
+
+.grid-7 {
+  width: calc(100% / 12 * 7);
+}
+
+.grid-8 {
+  width: calc(100% / 12 * 8);
+}
+
+.grid-9 {
+  width: calc(100% / 12 * 9);
+}
+
+.grid-10 {
+  width: calc(100% / 12 * 10);
+}
+
+.grid-11 {
+  width: calc(100% / 12 * 11);
+}
+
+.grid-12 {
+  width: calc(100% / 12 * 12);
+}/*# sourceMappingURL=design.css.map */

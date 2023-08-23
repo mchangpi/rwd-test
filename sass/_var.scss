@@ -1,7 +1,18 @@
-$aligns: left,right,center,justify;
 $displays: none,block,inline,inline-block,flex;
+$flex-justify: flex-start, center, flex-end;
+$aligns: left,right,center,justify;
 
 @mixin default(){
+    @each $d in $displays{
+        .d-#{$d}{
+            display: #{$d};
+        }
+    }
+    @each $f in $flex-justify{
+        .justify-#{$f}{
+            justify-content: #{$f};
+        }
+    }
     @each $a in $aligns{
         .text-#{$a}{
             text-align: #{$a};
@@ -13,7 +24,8 @@ $displays: none,block,inline,inline-block,flex;
         }
     }
 }
-@mixin s-phone(){
+
+@mixin phone(){
     @each $d in $displays{
         .ds-#{$d}{
             display: #{$d};
@@ -25,9 +37,39 @@ $displays: none,block,inline,inline-block,flex;
         }
     }
 }
-@mixin m-table(){
+@mixin table(){
+    @each $d in $displays{
+        .dm-#{$d}{
+            display: #{$d};
+        }
+    }
+    @for $i from 1 through 12{
+        .grid-m-#{$i}{
+            width: calc(100% / 12 * #{$i});
+        }
+    }
 }
-@mixin l-desk(){
+@mixin desk(){
+    @each $d in $displays{
+        .dl-#{$d}{
+            display: #{$d};
+        }
+    }
+    @for $i from 1 through 12{
+        .grid-l-#{$i}{
+            width: calc(100% / 12 * #{$i});
+        }
+    }
 }
-@mixin xl-tv(){
+@mixin tv(){
+    @each $d in $displays{
+        .dxl-#{$d}{
+            display: #{$d};
+        }
+    }
+    @for $i from 1 through 12{
+        .grid-xl-#{$i}{
+            width: calc(100% / 12 * #{$i});
+        }
+    }
 }

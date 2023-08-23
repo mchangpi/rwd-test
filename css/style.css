@@ -6,6 +6,39 @@ that need normalizing.
 https://necolas.github.io/normalize.css/
 */
 @import "./css/normalise.css";
+/* default */
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-flex-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-flex-end {
+  justify-content: flex-end;
+}
+
 .text-left {
   text-align: left;
 }
@@ -70,122 +103,219 @@ https://necolas.github.io/normalize.css/
   width: calc(100% / 12 * 12);
 }
 
-.ds-none {
-  display: none;
+/* screen s */
+@media screen and (min-width: 375px) {
+  .ds-none {
+    display: none;
+  }
+  .ds-block {
+    display: block;
+  }
+  .ds-inline {
+    display: inline;
+  }
+  .ds-inline-block {
+    display: inline-block;
+  }
+  .ds-flex {
+    display: flex;
+  }
+  .grid-s-1 {
+    width: calc(100% / 12 * 1);
+  }
+  .grid-s-2 {
+    width: calc(100% / 12 * 2);
+  }
+  .grid-s-3 {
+    width: calc(100% / 12 * 3);
+  }
+  .grid-s-4 {
+    width: calc(100% / 12 * 4);
+  }
+  .grid-s-5 {
+    width: calc(100% / 12 * 5);
+  }
+  .grid-s-6 {
+    width: calc(100% / 12 * 6);
+  }
+  .grid-s-7 {
+    width: calc(100% / 12 * 7);
+  }
+  .grid-s-8 {
+    width: calc(100% / 12 * 8);
+  }
+  .grid-s-9 {
+    width: calc(100% / 12 * 9);
+  }
+  .grid-s-10 {
+    width: calc(100% / 12 * 10);
+  }
+  .grid-s-11 {
+    width: calc(100% / 12 * 11);
+  }
+  .grid-s-12 {
+    width: calc(100% / 12 * 12);
+  }
 }
-
-.ds-block {
-  display: block;
+/* screen m */
+@media screen and (min-width: 768px) {
+  .dm-none {
+    display: none;
+  }
+  .dm-block {
+    display: block;
+  }
+  .dm-inline {
+    display: inline;
+  }
+  .dm-inline-block {
+    display: inline-block;
+  }
+  .dm-flex {
+    display: flex;
+  }
+  .grid-m-1 {
+    width: calc(100% / 12 * 1);
+  }
+  .grid-m-2 {
+    width: calc(100% / 12 * 2);
+  }
+  .grid-m-3 {
+    width: calc(100% / 12 * 3);
+  }
+  .grid-m-4 {
+    width: calc(100% / 12 * 4);
+  }
+  .grid-m-5 {
+    width: calc(100% / 12 * 5);
+  }
+  .grid-m-6 {
+    width: calc(100% / 12 * 6);
+  }
+  .grid-m-7 {
+    width: calc(100% / 12 * 7);
+  }
+  .grid-m-8 {
+    width: calc(100% / 12 * 8);
+  }
+  .grid-m-9 {
+    width: calc(100% / 12 * 9);
+  }
+  .grid-m-10 {
+    width: calc(100% / 12 * 10);
+  }
+  .grid-m-11 {
+    width: calc(100% / 12 * 11);
+  }
+  .grid-m-12 {
+    width: calc(100% / 12 * 12);
+  }
 }
-
-.ds-inline {
-  display: inline;
+/* screen x */
+@media screen and (min-width: 1024px) {
+  .dl-none {
+    display: none;
+  }
+  .dl-block {
+    display: block;
+  }
+  .dl-inline {
+    display: inline;
+  }
+  .dl-inline-block {
+    display: inline-block;
+  }
+  .dl-flex {
+    display: flex;
+  }
+  .grid-l-1 {
+    width: calc(100% / 12 * 1);
+  }
+  .grid-l-2 {
+    width: calc(100% / 12 * 2);
+  }
+  .grid-l-3 {
+    width: calc(100% / 12 * 3);
+  }
+  .grid-l-4 {
+    width: calc(100% / 12 * 4);
+  }
+  .grid-l-5 {
+    width: calc(100% / 12 * 5);
+  }
+  .grid-l-6 {
+    width: calc(100% / 12 * 6);
+  }
+  .grid-l-7 {
+    width: calc(100% / 12 * 7);
+  }
+  .grid-l-8 {
+    width: calc(100% / 12 * 8);
+  }
+  .grid-l-9 {
+    width: calc(100% / 12 * 9);
+  }
+  .grid-l-10 {
+    width: calc(100% / 12 * 10);
+  }
+  .grid-l-11 {
+    width: calc(100% / 12 * 11);
+  }
+  .grid-l-12 {
+    width: calc(100% / 12 * 12);
+  }
 }
-
-.ds-inline-block {
-  display: inline-block;
-}
-
-.ds-flex {
-  display: flex;
-}
-
-.grid-s-1 {
-  width: calc(100% / 12 * 1);
-}
-
-.grid-s-2 {
-  width: calc(100% / 12 * 2);
-}
-
-.grid-s-3 {
-  width: calc(100% / 12 * 3);
-}
-
-.grid-s-4 {
-  width: calc(100% / 12 * 4);
-}
-
-.grid-s-5 {
-  width: calc(100% / 12 * 5);
-}
-
-.grid-s-6 {
-  width: calc(100% / 12 * 6);
-}
-
-.grid-s-7 {
-  width: calc(100% / 12 * 7);
-}
-
-.grid-s-8 {
-  width: calc(100% / 12 * 8);
-}
-
-.grid-s-9 {
-  width: calc(100% / 12 * 9);
-}
-
-.grid-s-10 {
-  width: calc(100% / 12 * 10);
-}
-
-.grid-s-11 {
-  width: calc(100% / 12 * 11);
-}
-
-.grid-s-12 {
-  width: calc(100% / 12 * 12);
-}
-
-ul {
-  display: flex;
-}
-ul li {
-  color: red;
-}
-ul li:hover {
-  color: blue;
-}
-
-/* https://sass-lang.com/documentation/at-rules/control/each/ */
-.icon-40px {
-  font-size: 40px;
-  height: 40px;
-  width: 40px;
-}
-
-.icon-50px {
-  font-size: 50px;
-  height: 50px;
-  width: 50px;
-}
-
-.icon-80px {
-  font-size: 80px;
-  height: 80px;
-  width: 80px;
-}
-
-/* https://sass-lang.com/documentation/at-rules/control/for/ */
-ul:nth-child(3n+1) {
-  background-color: #004080;
-}
-
-ul:nth-child(3n+2) {
-  background-color: #004d99;
-}
-
-ul:nth-child(3n+3) {
-  background-color: #0059b3;
-}
-
-/* https://sass-lang.com/documentation/at-rules/mixin/ */
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-/* Difference between Reset CSS and Normalize CSS 
-https://israynotarray.com/css/20210807/3641451940/ *//*# sourceMappingURL=style.css.map */
+/* screen xl */
+@media screen and (min-width: 1366px) {
+  .dxl-none {
+    display: none;
+  }
+  .dxl-block {
+    display: block;
+  }
+  .dxl-inline {
+    display: inline;
+  }
+  .dxl-inline-block {
+    display: inline-block;
+  }
+  .dxl-flex {
+    display: flex;
+  }
+  .grid-xl-1 {
+    width: calc(100% / 12 * 1);
+  }
+  .grid-xl-2 {
+    width: calc(100% / 12 * 2);
+  }
+  .grid-xl-3 {
+    width: calc(100% / 12 * 3);
+  }
+  .grid-xl-4 {
+    width: calc(100% / 12 * 4);
+  }
+  .grid-xl-5 {
+    width: calc(100% / 12 * 5);
+  }
+  .grid-xl-6 {
+    width: calc(100% / 12 * 6);
+  }
+  .grid-xl-7 {
+    width: calc(100% / 12 * 7);
+  }
+  .grid-xl-8 {
+    width: calc(100% / 12 * 8);
+  }
+  .grid-xl-9 {
+    width: calc(100% / 12 * 9);
+  }
+  .grid-xl-10 {
+    width: calc(100% / 12 * 10);
+  }
+  .grid-xl-11 {
+    width: calc(100% / 12 * 11);
+  }
+  .grid-xl-12 {
+    width: calc(100% / 12 * 12);
+  }
+}/*# sourceMappingURL=style.css.map */

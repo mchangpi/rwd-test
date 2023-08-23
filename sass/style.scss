@@ -9,51 +9,25 @@ https://necolas.github.io/normalize.css/
 @import "./css/normalise.css";
 @import "var";
 
+/* default */
 @include default;
-@include s-phone;
-@include m-table;
-@include l-desk;
-@include xl-tv;
 
-ul{
-    display: flex;
-    li{
-        color: red;
-    };
-    li:hover{
-        color: blue;
-    }
+/* screen s */
+@media screen and (min-width: 375px){
+    @include phone;
 }
 
-/* https://sass-lang.com/documentation/at-rules/control/each/ */
-$sizes: 40px, 50px, 80px;
-@each $size in $sizes {
-  .icon-#{$size} {
-    font-size: $size;
-    height: $size;
-    width: $size;
-  }
+/* screen m */
+@media screen and (min-width: 768px){
+    @include table;
 }
 
-/* https://sass-lang.com/documentation/at-rules/control/for/ */
-$base-color: #036;
-@for $i from 1 through 3 {
-  ul:nth-child(3n + #{$i}) {
-    background-color: lighten($base-color, $i * 5%);
-  }
+/* screen x */
+@media screen and (min-width: 1024px){
+    @include desk;
 }
 
-/* https://sass-lang.com/documentation/at-rules/mixin/ */
-@mixin reset-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+/* screen xl */
+@media screen and (min-width: 1366px){
+    @include tv;
 }
-
-nav ul {
-  @include reset-list;
-}
-
-/* Difference between Reset CSS and Normalize CSS 
-https://israynotarray.com/css/20210807/3641451940/ */
-
