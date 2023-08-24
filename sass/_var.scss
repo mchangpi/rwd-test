@@ -1,21 +1,28 @@
-$displays: none,block,inline,inline-block,flex;
-$flex-justify: flex-start, center, flex-end;
 $aligns: left,right,center,justify;
+$displays: none,block,inline,inline-block,flex;
+$flex-align: flex-start,center,flex-end;
+$flex-wrap: wrap,nowrap;
+
 
 @mixin default(){
-    @each $d in $displays{
-        .d-#{$d}{
-            display: #{$d};
+    @each $f in $flex-align{
+        .#{$f}{
+            justify-content: #{$f};
         }
     }
-    @each $f in $flex-justify{
-        .justify-#{$f}{
-            justify-content: #{$f};
+    @each $fw in $flex-wrap{
+        .#{$fw}{
+            flex-wrap: #{$fw};
         }
     }
     @each $a in $aligns{
         .text-#{$a}{
             text-align: #{$a};
+        }
+    }
+    @each $d in $displays{
+        .d-#{$d}{
+            display: #{$d};
         }
     }
     @for $i from 1 through 12{
@@ -24,7 +31,6 @@ $aligns: left,right,center,justify;
         }
     }
 }
-
 @mixin phone(){
     @each $d in $displays{
         .ds-#{$d}{

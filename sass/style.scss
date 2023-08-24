@@ -6,11 +6,8 @@ that need normalizing.
 https://necolas.github.io/normalize.css/
 */
 
-@import "./css/normalise.css";
-@import "var";
-
-/* default */
-@include default;
+@import "reset","var";
+    @include default;
 
 /* screen s */
 @media screen and (min-width: 375px){
