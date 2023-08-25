@@ -41,6 +41,11 @@ header {
   height: 80px;
   line-height: 80px;
 }
+header menu {
+  position: relative;
+  z-index: 100;
+  background-color: #FFFFFF;
+}
 header menu ul li a {
   color: var(--lightBlack);
   padding: 0 1em;
@@ -107,4 +112,143 @@ header nav .nav-b {
 }
 #about .grid-11 i {
   color: var(--themeColor);
+}
+
+#product {
+  width: 100%;
+}
+#product > .grid-12:nth-of-type(1) {
+  background-color: var(--darkBlack);
+  color: var(--lightGray);
+  padding: 3em 0;
+}
+#product .grid-6 {
+  position: relative;
+}
+#product .grid-6 img {
+  width: 100%;
+}
+#product .grid-6 .title {
+  width: 100%;
+  height: 3em;
+  line-height: 3em;
+  text-align: center;
+  background-color: var(--alphaBlack);
+  color: var(--lightGray);
+  position: absolute;
+  bottom: 0;
+}
+#product .grid-10 {
+  padding: 2em 1em;
+}
+#product .grid-10 img {
+  width: 100%;
+}
+#product .grid-10 h3 {
+  padding: 0.5em 0;
+}
+
+#show {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://picsum.photos/id/222/1200/1200);
+  background-size: cover;
+  background-position: center bottom;
+}
+#show .grid-12 {
+  background-color: rgba(153, 0, 153, 0.5019607843);
+  color: var(--lightGray);
+  padding: calc(50vh - 5em) 1em 0;
+}
+
+#service .grid-12:nth-of-type(1) {
+  padding: 4em 2em;
+}
+#service .grid-m-4 {
+  position: relative;
+}
+#service .grid-m-4 img {
+  width: 100%;
+}
+#service .grid-m-4 .push {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: radial-gradient(rgba(128, 128, 128, 0.6666666667), rgba(0, 0, 0, 0.6666666667) 80%);
+  color: var(--lightGray);
+  padding: calc(35% - 1em) 2em 0;
+}
+
+#contact {
+  background-color: var(--lightBlack);
+  color: var(--lightGray);
+  padding: 2em 0;
+}
+#contact .grid-10 {
+  padding: 1em;
+}
+#contact .grid-10 h3 {
+  padding: 2em 0;
+}
+#contact .grid-10 p {
+  padding-bottom: 1em;
+  text-align: justify;
+}
+#contact .grid-10 a {
+  padding: 0 0 1em;
+  color: var(--themeColor);
+}
+#contact .grid-10 table {
+  width: 100%;
+}
+#contact .grid-10 hr {
+  border-color: black;
+  border-style: solid;
+  margin: 0.5em;
+}
+
+footer {
+  background-color: var(--darkBlack);
+  color: var(--darkGray);
+  padding: 2em 0;
+}
+
+@media screen and (min-width: 768px) {
+  menu {
+    display: block !important;
+  }
+  #show {
+    height: 35vh;
+  }
+  #show .grid-12 {
+    padding: calc(15vh - 2em) 1em 0;
+  }
+  #service .grid-m-4 .push {
+    filter: opacity(0);
+    transition: all 500ms ease;
+  }
+  #service .grid-m-4:hover .push {
+    filter: opacity(1);
+  }
+}
+@media screen and (min-width: 1024px) {
+  #product .grid-6 {
+    overflow: hidden;
+  }
+  #product .grid-6 img {
+    transform: scale(1);
+    transition: all 500ms ease;
+  }
+  #product .grid-6 .title {
+    bottom: -3em;
+    transition: all 500ms ease;
+  }
+  #product .grid-6:hover img {
+    transform: scale(1.2);
+  }
+  #product .grid-6:hover .title {
+    bottom: 0;
+  }
 }/*# sourceMappingURL=design.css.map */
